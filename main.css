@@ -23,4 +23,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.container .serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .serviceBox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .serviceBox:hover .icon {
+    width: 80px;
+    height: 80px;
+    border: 50px;
+    border-radius: 50%;
+}
+
